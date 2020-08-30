@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './products/product-list.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -13,8 +14,9 @@ import { ProductListComponent } from './products/product-list.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,ProductListComponent]
 })
-export class AppModule { }
+export class AppModule {}
